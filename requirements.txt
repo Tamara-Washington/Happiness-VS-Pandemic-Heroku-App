@@ -1,8 +1,16 @@
-certifi==2020.12.5
-click==7.1.2
-Flask==1.1.2
-itsdangerous==1.1.0
-Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1612119311452/work
-MarkupSafe @ file:///D:/bld/markupsafe_1610127684851/work
-Werkzeug==1.0.1
-wincertstore==0.2
+dnspython
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+numpy
+pandas
+psycopg2-binary
+python-dateutil
+pytz
+six
+SQLAlchemy
+Werkzeug
+plotly
+Flask-SQLAlchemy
+gunicorn
