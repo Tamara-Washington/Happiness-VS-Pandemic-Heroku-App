@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.ext.automap import automap_base
 from numpy.random import f
 
-# engine = create_engine('postgresql://postgres:password@localhost:5432/Happiness_db')
+engine = create_engine('postgresql://postgres:ricebootcamp@happinesscoviddb.cy7ekxurfwul.us-east-2.rds.amazonaws.com:5432/Happiness_db')
 
 app = Flask(__name__)
 
@@ -20,15 +20,15 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-# App route countries
-#-----------------------------------------------------
-# @app.route("/countries")
-# def countries():
-#     results=engine.execute("SELECT country FROM un_govt").fetchall()
-#     country=[]
-#     for result in results:
-#         country.append(result[0])
-#     return jsonify(country)
+App route countries
+-----------------------------------------------------
+@app.route("/countries")
+def countries():
+    results=engine.execute("SELECT country FROM un_govt").fetchall()
+    country=[]
+    for result in results:
+        country.append(result[0])
+    return jsonify(country)
 
 
 # # App route to Home Page
