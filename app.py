@@ -20,7 +20,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-App route countries
+# App route countries
 -----------------------------------------------------
 @app.route("/countries")
 def countries():
