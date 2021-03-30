@@ -21,7 +21,7 @@ def home():
     return render_template("index.html")
 
 # App route countries
------------------------------------------------------
+# -----------------------------------------------------
 @app.route("/countries")
 def countries():
     results=engine.execute("SELECT country FROM un_govt").fetchall()
