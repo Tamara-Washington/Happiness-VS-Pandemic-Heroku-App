@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.ext.automap import automap_base
 from numpy.random import f
 
-engine = create_engine('postgresql://postgres:ricebootcamp@happinesscoviddb.cy7ekxurfwul.us-east-2.rds.amazonaws.com:5432/Happiness_db')
+engine = create_engine('postgresql://postgres:ricebootcamp@happinesscoviddb.cy7ekxurfwul.us-east-2.rds.amazonaws.com:5432/postgres')
 
 app = Flask(__name__)
 
