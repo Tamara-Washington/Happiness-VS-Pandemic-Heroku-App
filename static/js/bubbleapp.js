@@ -82,7 +82,7 @@ function makeResponsive() {
         inputData.forEach(function (data) {
             data.total_new_cases = data.total_new_cases;
             data.total_new_deaths = data.total_new_deaths;
-            data.happiness_score = data.happiness_score;
+            data.happiness_score = data.happiness_score*3;
         });
 
         // xLinearScale function above csv import
