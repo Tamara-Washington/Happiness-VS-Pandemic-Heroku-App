@@ -74,7 +74,6 @@ function makeResponsive() {
         
         return circlesGroup;
     } 
-
      // Load data from data.json
     d3.json("/static/data/data.json").then(function (inputData) {
     //d3.json("/happiness_vs_covid_map").then(function (inputData) {
@@ -82,7 +81,7 @@ function makeResponsive() {
         inputData.forEach(function (data) {
             data.total_new_cases = data.total_new_cases;
             data.total_new_deaths = data.total_new_deaths;
-            data.happiness_score = data.happiness_score*3;
+            data.happiness_score = data.happiness_score;
         });
 
         // xLinearScale function above csv import
