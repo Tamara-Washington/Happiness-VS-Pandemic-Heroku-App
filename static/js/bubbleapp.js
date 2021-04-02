@@ -205,7 +205,7 @@ function makeResponsive() {
         // Add an on.mouseover event to display a tooltip and transition color when selected
         circlesGroup.on("mouseover", function (event, d) {
             toolTip.show(`<strong>Country : ${event.country}</strong><br>
-                        <strong>Happiness Score : ${d3.format(‘.1f’)(event.happiness_score)}</strong><br>
+                        <strong>Happiness Score : ${d3.format(',')(event.happiness_score.toFixed())}</strong><br>
                         <strong>Total New Cases : ${d3.format(',')(event.total_new_cases)}</strong><br>
                         <strong>Total New Deaths : ${d3.format(',')(event.total_new_deaths)}</strong>`);
                         
